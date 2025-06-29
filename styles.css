@@ -1,0 +1,101 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c4f7b3; /* verde maçã claro */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Lista de gastos */
+#lista-gastos {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#lista-gastos li {
+  background-color: #e8f5e9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-left: 6px solid #4caf50;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Cores específicas por categoria */
+#Aluguel {
+  border-left-color: #ef5350; /* Vermelho suave */
+}
+
+#Alimentação {
+  border-left-color: #ffa726; /* Laranja */
+}
+
+#Estudos {
+  border-left-color: #42a5f5; /* Azul */
+}
+
+#Transporte {
+  border-left-color: #ab47bc; /* Roxo */
+}
+
+#Cuidados\ Pessoais {
+  border-left-color: #26a69a; /* Verde água */
+}
+
+#Investimentos {
+  border-left-color: #66bb6a; /* Verde escuro */
+}
+
+/* Total */
+#Total {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #1b5e20;
+}
+
+

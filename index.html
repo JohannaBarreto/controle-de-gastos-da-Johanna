@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Controle de Gastos da Johanna</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Gastos da Johanna</h1>
+
+    <!-- Formulário para adicionar gastos -->
+    <form id="gasto-form">
+      <input type="text" id="descricao" placeholder="Descrição do gasto" required />
+      <input type="number" id="valor" placeholder="Valor em R$" required />
+      <select id="categoria" required>
+        <option value="">Selecione uma categoria</option>
+        <option value="Aluguel">Aluguel</option>
+        <option value="Alimentação">Alimentação</option>
+        <option value="Estudos">Estudos</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Cuidados Pessoais">Cuidados Pessoais</option>
+        <option value="Investimentos">Investimentos</option>
+      </select>
+      <button type="submit">Adicionar Gasto</button>
+    </form>
+
+    <!-- Lista de valores por categoria -->
+    <ul id="lista-gastos">
+      <li id="Aluguel">Aluguel: R$ 0,00</li>
+      <li id="Alimentação">Alimentação: R$ 0,00</li>
+      <li id="Estudos">Estudos: R$ 0,00</li>
+      <li id="Transporte">Transporte: R$ 0,00</li>
+      <li id="Cuidados Pessoais">Cuidados Pessoais: R$ 0,00</li>
+      <li id="Investimentos">Investimentos: R$ 0,00</li>
+    </ul>
+
+    <!-- Total geral -->
+    <div id="Total">Total: R$ 0,00</div>
+  </div>
+
+  <!-- Scripts JS -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
